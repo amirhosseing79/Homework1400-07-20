@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #myDIV {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px; 
+            }
+    </style>
+</head>
+<body>
+    <!--Exp1-->
+    <h2>This is a test!</h2>
+    <p id="p1">Hello World!</p>
+    <hr>
+     <!--Exp2-->
+    <h2>Light Test</h2>
+<button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+<img id="myImage" src="pic_bulbon.gif" style="width:100px">
+<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+    <hr>
+   <!--Exp3-->
+   <p id="p2">Hello World!</p>
+    <hr>
+    <!--Exp4,5-->
+    <button onclick="myFunction()">Click Me!</button>
+    <div id="myDIV">
+    Amirhossein Gudarzi
+    </div>
+<script>
+document.getElementById("p1").innerHTML = "Amirhossein Gudarzi";
+document.getElementById("p2").style.color = "blue";
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+</body>
+</html>
